@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VideoAI - Crie Vídeos com IA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Crie vídeos profissionais automaticamente</h1>
+    <p>Gere até 2 vídeos gratuitos sem cadastro. Suporte a múltiplos idiomas.</p>
+  </header>
+
+  <main>
+    <div id="form-container">
+      <form id="videoForm">
+        <label for="prompt">Digite o tema do vídeo:</label>
+        <input type="text" id="prompt" name="prompt" required />
+
+        <label for="language">Escolha o idioma:</label>
+        <select id="language" name="language">
+          <option value="pt-BR">Português (Brasil)</option>
+          <option value="en-US">Inglês</option>
+          <option value="es-ES">Espanhol</option>
+          <option value="fr-FR">Francês</option>
+          <option value="de-DE">Alemão</option>
+          <option value="it-IT">Italiano</option>
+        </select>
+
+        <button type="submit">Gerar Meu Vídeo Grátis</button>
+      </form>
+    </div>
+
+    <div id="status"></div>
+
+    <div id="upgrade-box" style="display:none;">
+      <h2>Você usou seus 2 vídeos grátis!</h2>
+      <p>Quer mais? Assine por apenas US$9/mês e tenha acesso ilimitado.</p>
+      <button id="checkoutButton">Assinar Agora</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VideoAI - Seu gerador de vídeos automático</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="generator.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>
