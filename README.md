@@ -1,18 +1,34 @@
-Este aplicativo é um gerador de vídeos por inteligência artificial projetado para criar conteúdos automatizados e personalizáveis com alta qualidade visual. Com suporte para múltiplas proporções de tela, como 16:9 (horizontal) e 9:16 (vertical), a ferramenta atende perfeitamente criadores de conteúdo para YouTube, Instagram, TikTok, Reels, Shorts, entre outras plataformas.
+# 🚀 VideoAI – Pacote Início Rápido
 
-O sistema permite gerar vídeos completos com base em descrições de texto, combinando imagens, transições, narração com voz sintética (opcional) e efeitos visuais impactantes. Ideal para quem deseja automatizar a produção de vídeos com rapidez e eficiência, sem abrir mão da criatividade e personalização.
+Este é um modelo funcional para você começar a vender vídeos automatizados com IA.
 
-Principais recursos:
+## 📁 Estrutura do Projeto
 
-Geração de vídeos com proporções personalizadas (16:9, 9:16, 1:1, etc.)
 
-Criação automática com base em textos descritivos
+## 🛠 Como Colocar Online
 
-Interface amigável e fácil de usar
+### Passo 1: Criar Conta no GitHub
+- [github.com](https://github.com)
+- Crie um repositório público chamado: `video-ai-inicio-rapido`
 
-Otimizado para alta retenção e engajamento visual
+### Passo 2: Subir Arquivos
+- Arraste todos os arquivos acima para o repositório
 
-Exportação rápida e em alta qualidade (.mp4)
+### Passo 3: Ativar GitHub Pages
+- No GitHub:
+  - Acesse **Settings > Pages**
+  - Em Source, selecione a branch `main` e a pasta `/root`
+  - Salve
+- Seu site estará online em:  
+  `https://seu-usuario.github.io/video-ai-inicio-rapido/`
 
-Este app é ideal para criadores de conteúdo, influenciadores, educadores, profissionais de marketing digital e empreendedores que buscam escalar a produção de vídeos com a ajuda da IA.
+### Passo 4: Teste Localmente (Opcional)
+- Abra o arquivo `index.html` no navegador para ver como funciona antes de publicar
 
+## 💳 Como Configurar o Pagamento Com Stripe
+
+1. Crie conta no [Stripe Dashboard](https://dashboard.stripe.com/)
+2. Na aba "Developers", copie sua **Public Key** (ex: `pk_test_XXXXXXXXXXXXX`)
+3. Cole-a no arquivo `checkout.js`, na linha:
+   ```js
+   const stripe = Stripe('pk_test_XXXXXXXXXXXXXXXXXXXXXXXX');
